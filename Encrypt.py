@@ -3,9 +3,17 @@
 'Computer Science Makes the World go round but it doesn't make the world round itself!'
 
 Print the save the result as the variable = NoVowels
-""""
+"""
+def Encrypt(AnyString):
+    newstr = ""
+    vowels = ('a', 'e', 'i', 'o', 'u')
+    for i in AnyString.lower():
+        if i in vowels:
+            newstr = Anystring.replace(i, "")
+        return newstr
+NoVowels = Encrypt(newstr)
 
-
+print("Computer Science Makes the World go round but it doesn't make the world round itself!")
 
 
 
