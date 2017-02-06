@@ -1,7 +1,10 @@
 """Define a function that will take a parameter, n, and triple it and return
 the result"""
-
-
+n = input()
+parameter = n
+s = int(n*3)
+answer = int(s*3)
+print(answer)
 
 
 
