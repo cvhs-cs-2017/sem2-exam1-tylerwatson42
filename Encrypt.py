@@ -20,4 +20,9 @@ print(Encrypt(plaintxt))
 """Write an encryption code that you make up and run it for the variable NoVowels"""
 def MyEncrypt(t):
     newstr = ""
-    
+    for ch in t:
+        y = ord(ch) + 10
+        newstr = newstr + chr(y)
+    return newstr
+
+print(MyEncrypt(NoVowels))
