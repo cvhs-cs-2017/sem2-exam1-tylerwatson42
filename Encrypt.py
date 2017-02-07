@@ -4,18 +4,17 @@
 
 Print the save the result as the variable = NoVowels
 """
+plaintxt = 'Computer Science Makes the World go round but it doesn/t make the world round itself!'
 def Encrypt(AnyString):
     newstr = ""
-    vowels = ('a', 'e', 'i', 'o', 'u')
+    vowels = 'aeiou'
     for i in AnyString.lower():
         if i in vowels:
-            newstr = Anystring.replace(i, "")
-        return newstr
-NoVowels = Encrypt(newstr)
-
-print("Computer Science Makes the World go round but it doesn't make the world round itself!")
-
-
-
+            newstr = newstr + ""
+        else:
+            newstr = newstr + i
+    return newstr
+NoVowels = Encrypt(plaintxt)
+print(Encrypt(plaintxt))
 
 """Write an encryption code that you make up and run it for the variable NoVowels"""
