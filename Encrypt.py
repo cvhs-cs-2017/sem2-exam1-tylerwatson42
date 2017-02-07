@@ -18,3 +18,6 @@ NoVowels = Encrypt(plaintxt)
 print(Encrypt(plaintxt))
 
 """Write an encryption code that you make up and run it for the variable NoVowels"""
+def MyEncrypt(t):
+    newstr = ""
+    
