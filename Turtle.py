@@ -28,15 +28,17 @@ t.forward(90)
 
 """Import and Call the DrawRectangle(Anyturtle, l, w) function from the
 file MyFile.py"""
+import turtle
+Anyturtle = turtle.Turtle()
+l=30
+w=60
+def DrawRectange(Anyturtle, l, w):
+    for i in range(2):
+        Anyturtle.forward(l)
+        Anyturtle.right(90)
+        Anyturtle.forward(w)
+        Anyturtle.right(90)
 
-def DrawRectangle(Anyturtle, l , w):
-    l = 60
-    w = 100
-    t = Anyturtle
+DrawRectange(Anyturtle, l, w)
 
-t = turtle.Turtle
-l = 70
-w = 100
-Anyturtle = t
-
-DrawRectangle()
+input()
