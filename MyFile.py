@@ -1,22 +1,37 @@
-"""
-# AddTen(n):  Adds 10 to the parameter n and returns the result"""
+"""Add 10 to the parameter n and returns the result"""
+ x = int(input("Enter a number: "))
+
 def AddTen(n):
-    n = input()
-    parameter =(n + 10)
+    a = x + 10
+    return a
 
-n = input()
-parameter =(n + 10)
-print(str(parameter))
+print(AddTen(x))
 
-Addten(input())
+"""DrawRectangle(Anyturtle, l, w):  Self Explanitory"""
 
-"""# DrawRectangle(Anyturtle, l, w):  Self Explanitory"""
 import turtle
-s = turtle.Turtle()
+Anyturtle = turtle.Turtle()
+l=30
+w=60
+def DrawRectange(Anyturtle, l, w):
+    for i in range(2):
+        Anyturtle.forward(l)
+        Anyturtle.right(90)
+        Anyturtle.forward(w)
+        Anyturtle.right(90)
 
-def DrawRectangle(Anyturtle, l , w):
-    l = input()
-    w = input()
-    s = Anyturtle
+DrawRectange(Anyturtle, l, w)
 
-DrawRectangle(s,input(),input())
+input()
+
+""" DrawPoly(Anyturtle, n):  Will draw a regular polygon with 'n' sides of"""
+import turtle
+Anyturtle = turtle.Turtle()
+n = 7
+def DrawPoly(Anyturtle, n):
+    for i in range(n):
+        Anyturtle.forward(50)
+        Anyturtle.right(40)
+
+DrawPoly(Anyturtle, 10)
+input()
